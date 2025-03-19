@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Desculpa Duda</title>
+</head>
+<body>
+   <style>
+body{
+    background-color: pink;
+}
+
+ .painel{
+background-color: white;
+margin: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ #sim{
+
+height: 40px;
+width: 60px;
+background-color: pink;
+border: 2px solid white;
+border-radius: 10px;
+color: white;
+margin-left: -50px;
+
+}
+
+ #nao{
+    position: absolute;
+height: 40px;
+width: 60px;
+background-color: pink;
+border: 2px solid white;
+border-radius: 10px;
+color: white;
+margin-right: 10px;
+ }
+
+   </style>
+   
+   <head>
+    <body>
+        
+
+
+<div class="painel"> 
+    
+    <h1>Me desculpa, duda, te amo muito</h1>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtTfWM4qUaB8fc5uOc4c8sNNnBtG0T31PRJw&s" alt="">
+
+    <h2>Você me desculpa?</h5>
+    
+<a href="https://open.spotify.com/intl-pt/track/36i9NcqbdQFdQfOROpIwMA?si=3024a7e472284d1b"><button id="sim">Sim!</button></a>
+<button onclick="fuja()"  id="nao">Não!</button>
+
+
+</div>
+
+
+<script>
+function fuja(){
+var botaoNao = document.getElementById("nao")
+
+var larguraJanela = window.innerWidth;
+var alturaJanela = window.innerHeight;
+
+var maxX = larguraJanela - botaoNao.offsetWidth;
+var maxY = alturaJanela - botaoNao.offsetHeight;
+
+var aleatorioX = Math.floor(Math.random() * maxX);
+var aleatorioY = Math.floor(Math.random() * maxY);
+
+botaoNao.style.left = aleatorioX + "px";
+botaoNao.style.top = aleatorioY + "px";
+
+}
+
+
+</script>
+
+
+</body>
+</html>
